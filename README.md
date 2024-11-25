@@ -2,6 +2,12 @@
 
 A comprehensive mapping of exchange tokens for underlying instruments across different Indian brokers.
 
+## Purpose
+
+This npm package was created out of necessity when developing a trading platform that supports multiple brokers. In such platforms, an exchange token is required for LTP (Last Traded Price) via WebSocket subscription. While exchange tokens should ideally be common for all trading symbols, they are only consistent for call, put, futures, and equity trading symbols.
+
+However, when selecting underlying instruments like NIFTY or BANKNIFTY (master symbols), these symbols have their own exchange tokens that vary across different broker types. The reason for this inconsistency is unclear. Therefore, this package was developed to return the underlying symbol token based on the broker type.
+
 ## Installation
 
 ```bash
@@ -36,7 +42,9 @@ console.log(getAvailableSymbols()); // ['NIFTY', 'BANKNIFTY', 'FINNIFTY', ...]
 - NIFTY
 - BANKNIFTY
 - FINNIFTY
-- (and more...)
+- MIDCPNIFTY
+- SENSEX
+- BANKEX
 
 ## Contributing
 
