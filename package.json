@@ -1,6 +1,6 @@
 {
   "name": "underlying-exchange-tokens-india",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Exchange tokens mapping for underlying instruments across different Indian brokers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
