@@ -7,7 +7,7 @@ import {
 describe("Exchange Token Utilities", () => {
   describe("getExchangeToken", () => {
     it("should return correct token for NIFTY on Zerodha", () => {
-      expect(getExchangeToken("NIFTY", "Zerodha")).toBe("1001");
+      expect(getExchangeToken("NIFTY", "Zerodha")).toBe("256265");
     });
 
     it("should return correct token for BANKNIFTY on Flattrade", () => {
@@ -40,6 +40,9 @@ describe("Exchange Token Utilities", () => {
       expect(symbols).toContain("NIFTY");
       expect(symbols).toContain("BANKNIFTY");
       expect(symbols).toContain("FINNIFTY");
+      expect(symbols).toContain("MIDCPNIFTY");
+      expect(symbols).toContain("SENSEX");
+      expect(symbols).toContain("BANKEX");
     });
   });
 });
